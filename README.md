@@ -63,7 +63,7 @@ obteniendo información especifica que ayude a identificar a cada tipo de conten
 <a target="_blank"><img src="https://i.postimg.cc/qB3pFj28/12.jpg" alt="12"/></a><br/><br/>
 
 <h3 align="left">Diagrama de clases:</h3>
-<h4>El diagrama de clases se encuentra en los archivos del proyecto: https://github.com/Mauricio-CF/pooUnidad2/blob/master/Diagrama-Clases.vpp</h4>
+<h4>El diagrama de clases se encuentra en los archivos del proyecto: https://github.com/Mauricio-CF/ProyectoAudiovisual/blob/master/Diagrama-Clases%20(1).vpp
 
 <a target='_blank'><img src='https://i.postimg.cc/3RQtx8br/Contenido-Audiovisual.jpg' border='0' alt='Contenido-Audiovisual'/></a><br/><br/>
 
