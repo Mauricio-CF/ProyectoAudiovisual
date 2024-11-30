@@ -1,0 +1,50 @@
+Pelicula,1,Inception,148,Sci-Fi,Warner Bros,Leonardo DiCaprio|Ellen Page|Joseph Gordon-Levitt
+Pelicula,2,The Dark Knight,152,Action,Warner Bros,Christian Bale|Heath Ledger|Aaron Eckhart
+Pelicula,3,Avatar,162,Fantasy,20th Century Fox,Sam Worthington|Zoe Saldana|Sigourney Weaver
+Pelicula,4,Titanic,195,Romance,Paramount Pictures,Leonardo DiCaprio|Kate Winslet
+Pelicula,5,The Matrix,136,Sci-Fi,Warner Bros,Keanu Reeves|Carrie-Anne Moss|Laurence Fishburne
+Pelicula,6,The Godfather,175,Crime,Paramount Pictures,Marlon Brando|Al Pacino|James Caan
+Pelicula,7,Forrest Gump,142,Drama,Paramount Pictures,Tom Hanks|Robin Wright|Gary Sinise
+Pelicula,8,Gladiator,155,Action,Universal Pictures,Russell Crowe|Joaquin Phoenix
+Pelicula,9,Interstellar,169,Sci-Fi,Paramount Pictures,Matthew McConaughey|Anne Hathaway
+Pelicula,10,The Avengers,143,Action,Marvel Studios,Robert Downey Jr.|Chris Evans|Scarlett Johansson
+Serie,1,Stranger Things,50,Drama|Sci-Fi,8|9|8|9
+Serie,2,Game of Thrones,55,Fantasy|Drama,10|10|10|10|10|10|7|6
+Serie,3,Breaking Bad,47,Drama|Crime,7|13|13|13|16
+Serie,4,The Crown,58,Drama|Historical,10|10|10|10|10
+Serie,5,The Witcher,60,Fantasy|Action,8|8|8
+Serie,6,Friends,22,Comedy|Romance,24|24|25|24|24|25|24|24|24|18
+Serie,7,The Office,22,Comedy|Mockumentary,6|22|23|14|26|24|26|24|25
+Serie,8,The Mandalorian,40,Sci-Fi|Adventure,8|8|8
+Serie,9,Money Heist,45,Drama|Crime,13|9|8|8|10
+Serie,10,Downton Abbey,47,Drama|Historical,7|8|9|9|9|8
+Documental,1,Planet Earth,50,Documentary,Nature,David Attenborough
+Documental,2,The Last Dance,60,Sports,Basketball,Michael Jordan
+Documental,3,Inside Job,108,Documentary,Finance,Matt Damon
+Documental,4,Blackfish,83,Documentary,Animal Rights,Gabriela Cowperthwaite
+Documental,5,13th,100,Documentary,Social Justice,Ava DuVernay
+Documental,6,Super Size Me,100,Documentary,Fast Food,Morgan Spurlock
+Documental,7,An Inconvenient Truth,96,Documentary,Climate Change,Al Gore
+Documental,8,The Social Dilemma,94,Documentary,Technology,Jeff Orlowski
+Documental,9,Won’t You Be My Neighbor,95,Documentary,Biography,Morgan Neville
+Documental,10,Free Solo,100,Documentary,Climbing,Jimmy Chin|Elizabeth Chai Vasarhelyi
+NoticiasDeTV,1,Noticias Univision,60,News,Univision,Jorge Ramos|Ilia Calderón
+NoticiasDeTV,2,Noticias Telemundo,30,News,Telemundo,José Díaz-Balart|Vanessa Hauc
+NoticiasDeTV,3,TN Noticias,20,News,TN (Todo Noticias),María Laura Santillán|Sergio Lapegüe
+NoticiasDeTV,4,El Noticiero,25,News,Canal 13,Marcelo Bonelli|Luciana Geuna
+NoticiasDeTV,5,24 Horas,60,News,TVN,Constanza Santa María|Iván Núñez
+NoticiasDeTV,6,Canal N Noticias,30,News,Canal N,José Mariño|Catherine Ayasta
+NoticiasDeTV,7,Noticieros Caracol,40,News,Caracol Televisión,Juan Diego Alvira|María Lucía Fernández
+NoticiasDeTV,8,Telefe Noticias,30,News,Telefe,Rodolfo Barili|Cristina Pérez
+NoticiasDeTV,9,América Noticias,45,News,América TV,Matías Prats|Soledad Larghi
+NoticiasDeTV,10,Noticias RCN,60,News,RCN,Jessica de la Peña|Juan Eduardo Jaramillo
+Podcasts,1,Entiende tu mente,30,Psicología,Reflexiones sobre la psicología cotidiana,2020-01-15,Mónica González|Luis Muiño|Mónica Muiños
+Podcasts,2,Radio Ambulante,45,Periodismo,Historias de América Latina contadas en español,2012-05-18,Daniel Alarcón
+Podcasts,3,Se Regalan Dudas,60,Entrevistas,Conversaciones para cuestionarlo todo,2018-10-01,Lety Sahagún|Ashley Frangie
+Podcasts,4,El Hilo,40,Noticias,El resumen semanal de América Latina,2020-02-21,Silvia Viñas|Eliezer Budasoff
+Podcasts,5,Creativo,90,Entretenimiento,Entrevistas a creadores de contenido y emprendedores,2018-08-10,Roberto Martínez
+Podcasts,6,Finanzas para Todos,35,Finanzas,Consejos financieros y gestión de dinero,2019-11-12,Sergio Fernández|Laura Gutiérrez
+Podcasts,7,El Podcast de Cristina Mitre,50,Salud y bienestar,Entrevistas sobre salud, fitness y bienestar,2017-03-22
+Podcasts,8,Despertando Podcast,10,Motivación,Micro reflexiones diarias para empezar tu día,2019-06-05,Liz Rangel
+Podcasts,9,Medicina Clara,20,Salud,Podcast de divulgación médica en español,2021-01-25,Dr. Manuel Sánchez
+Podcasts,10,La Cotorrisa,70,Comedia,Historias graciosas y entretenimiento ligero,2019-09-18,José Luis Slobotzky|Ricardo Pérez

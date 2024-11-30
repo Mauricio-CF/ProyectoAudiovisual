@@ -1,9 +1,9 @@
-package uni1a;
+package Modelo;
 
-public class Investigador {
+public class Host {
     private String nombre;
 
-    public Investigador(String nombre){
+    public Host(String nombre) {
         this.nombre = nombre;
     }
 

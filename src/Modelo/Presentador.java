@@ -1,8 +1,7 @@
-package uni1a;
+package Modelo;
 
 public class Presentador {
-
-    private String nombre;
+    public String nombre;
 
     public Presentador(String nombre) {
         this.nombre = nombre;
@@ -16,3 +15,4 @@ public class Presentador {
         this.nombre = nombre;
     }
 }
+
