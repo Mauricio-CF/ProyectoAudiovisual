@@ -28,7 +28,7 @@ public class Main {
             System.out.println("5. Cargar información de Podcasts");
             System.out.println("6. Mostrar información cargada");
             System.out.println("7. Generar archivo de respaldo");
-            System.out.println("8. Salir");
+            System.out.println("8. Salir \n");
             System.out.print("Seleccione una opción: ");
 
             int opcion = scanner.nextInt();
