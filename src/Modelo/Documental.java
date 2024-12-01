@@ -20,8 +20,8 @@ public class Documental extends ContenidoAudiovisual {
     }
 
     public void agregarInvestigador(Investigador investigador) {
-        investigadores.add(investigador); // Asegúrate de que este paso esté presente.
-    }
+        investigadores.add(investigador); 
+        }
 
     @Override
     public String toCSV(){
@@ -31,8 +31,12 @@ public class Documental extends ContenidoAudiovisual {
 
     public static Documental fromCSV(String csvLine){
         String[] parts = csvLine.split(",");
-        Documental documental = new Documental(Integer.parseInt(parts[0]), parts[1], Integer.parseInt(parts[2]), parts[3], parts[4]);
-
+        Documental documental = new Documental(
+        		Integer.parseInt(parts[0]), 
+        		parts[1], 
+        		Integer.parseInt(parts[2]), 
+        		parts[3], 
+        		parts[4]);
         String[] investigadorNombres = parts[5].split("\\|");
         for (String nombre : investigadorNombres){
             documental.agregarInvestigador(new Investigador(nombre));

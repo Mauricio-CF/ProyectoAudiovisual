@@ -3,24 +3,20 @@ package Modelo;
 import java.util.ArrayList;
 import java.util.List;
 
-// Representa una serie de TV que contiene temporadas.
-public class SerieDeTV extends ContenidoAudiovisual {
-    private List<Temporada> temporadas; // Lista de temporadas de la serie.
 
-    // Constructor
+public class SerieDeTV extends ContenidoAudiovisual {
+    private List<Temporada> temporadas; 
+
     public SerieDeTV(int id, String titulo, int duracionEnMinutos, String genero) {
         super(id, titulo, duracionEnMinutos, genero);
         this.temporadas = new ArrayList<>();
     }
 
-    // Método para agregar una temporada a la serie.
     public void agregarTemporada(Temporada temporada) {
         temporadas.add(temporada);
     }
 
-    // Getters y setters
     public List<String> getTemporadas() {
-        // Convierte la lista de temporadas en una lista de cadenas
         return temporadas.stream()
                 .map(temporada -> "Temporada " + temporada.getNumero() + ": " + temporada.getCantidadEpisodios() + " episodios")
                 .toList();
@@ -30,7 +26,6 @@ public class SerieDeTV extends ContenidoAudiovisual {
         this.temporadas = temporadas;
     }
 
-    // Representación en texto de la serie.
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -47,30 +42,29 @@ public class SerieDeTV extends ContenidoAudiovisual {
         return sb.toString();
     }
 
-    // Método estático para crear una serie desde una línea CSV.
     public static SerieDeTV fromCSV(String csvLine) {
-        String[] parts = csvLine.split(","); // Divide la línea CSV en partes.
+        String[] parts = csvLine.split(",");
         SerieDeTV serie = new SerieDeTV(
-                Integer.parseInt(parts[0]), // ID
-                parts[1],                   // Título
-                Integer.parseInt(parts[2]), // Duración en minutos
-                parts[3]                    // Género
+                Integer.parseInt(parts[0]), 
+                parts[1],                   
+                Integer.parseInt(parts[2]), 
+                parts[3]                    
         );
 
-        // Procesar temporadas si están presentes.
+        
         if (parts.length > 4 && !parts[4].isEmpty()) {
             String[] temporadasData = parts[4].split("\\|");
             for (String temporadaData : temporadasData) {
-                String[] tempParts = temporadaData.split("-"); // Divide "numeroTemporada-numeroEpisodios".
-                int numeroTemporada = Integer.parseInt(tempParts[0]); // Número de la temporada.
-                int numeroEpisodios = Integer.parseInt(tempParts[1]); // Número de episodios.
+                String[] tempParts = temporadaData.split("-"); 
+                int numeroTemporada = Integer.parseInt(tempParts[0]); 
+                int numeroEpisodios = Integer.parseInt(tempParts[1]); 
                 serie.agregarTemporada(new Temporada(numeroTemporada, numeroEpisodios));
             }
         }
         return serie;
     }
 
-    // Método para convertir la serie en formato CSV para guardar en archivo.
+    
     @Override
     public String toCSV() {
         StringBuilder sb = new StringBuilder();

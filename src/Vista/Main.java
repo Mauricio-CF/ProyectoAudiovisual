@@ -32,7 +32,7 @@ public class Main {
             System.out.print("Seleccione una opción: ");
 
             int opcion = scanner.nextInt();
-            scanner.nextLine(); // Limpiar buffer del scanner.
+            scanner.nextLine(); 
 
             switch (opcion) {
                 case 1: // Cargar información de películas.
@@ -55,7 +55,7 @@ public class Main {
                     }
                     break;
 
-                case 3: // Cargar información de películas.
+                case 3: // Cargar información de Documentales.
                     try {
                         System.out.println("Cargando datos de Documentales...");
                         controlador.cargarDesdeCSV(rutaDocumentales, "Documental");
@@ -65,23 +65,23 @@ public class Main {
                     }
                     break;
 
-                case 4: // Cargar información de películas.
+                case 4: // Cargar información de Noticias De TV.
                     try {
                         System.out.println("Cargando datos de Noticias De TV...");
                         controlador.cargarDesdeCSV(rutaNoticiasDeTV, "NoticiasDeTV");
                         System.out.println("Noticias De TV cargadas correctamente.");
                     } catch (IOException e) {
-                        System.err.println("Error al cargar los Documentales: " + e.getMessage());
+                        System.err.println("Error al cargar los NoticiasDeTV: " + e.getMessage());
                     }
                     break;
 
-                case 5: // Cargar información de películas.
+                case 5: // Cargar información de Podcasts.
                     try {
-                        System.out.println("Cargando datos de Noticias De TV...");
+                        System.out.println("Cargando datos de Podcasts...");
                         controlador.cargarDesdeCSV(rutaPodcasts, "Podcasts");
                         System.out.println("Podcasts cargados correctamente.");
                     } catch (IOException e) {
-                        System.err.println("Error al cargar los Documentales: " + e.getMessage());
+                        System.err.println("Error al cargar los Podcasts: " + e.getMessage());
                     }
                     break;
 
@@ -149,6 +149,7 @@ public class Main {
         }
     }
 
+    // Método para mostrar la información de Documental con encabezados
     private static void mostrarDocumental(Documental documental) {
         System.out.println("\n*** Documental ***");
         System.out.println("Id: " + documental.id);
@@ -159,6 +160,8 @@ public class Main {
         System.out.println("Investigadores: " + String.join(", ", documental.getNombre()));
     }
 
+ 
+    // Método para mostrar la información de NoticiasDeTV con encabezados
     private static void mostrarNoticiasDeTV(NoticiasDeTV noticiasDeTV) {
         System.out.println("\n*** Noticias De TV ***");
         System.out.println("Id: " + noticiasDeTV.id);
@@ -169,6 +172,7 @@ public class Main {
         System.out.println("Presentadores: " + String.join(", ", noticiasDeTV.getNombre()));
     }
 
+ // Método para mostrar la información de Podcasts con encabezados
     private static void mostrarPodcasts(Podcasts podcasts) {
         System.out.println("\n*** Podcasts ***");
         System.out.println("Id: " + podcasts.id);

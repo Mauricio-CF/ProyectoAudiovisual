@@ -1,8 +1,8 @@
 package Modelo;
 
 public class Temporada {
-    private int numero; // Número de la temporada.
-    private int cantidadEpisodios; // Número de episodios.
+    private int numero; 
+    private int cantidadEpisodios; 
 
     public Temporada(int numero, int cantidadEpisodios) {
         this.numero = numero;

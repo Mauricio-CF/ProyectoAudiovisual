@@ -33,8 +33,12 @@ public class NoticiasDeTV extends ContenidoAudiovisual{
 
     public static NoticiasDeTV fromCSV(String csvLine){
         String[] parts = csvLine.split(",");
-        NoticiasDeTV noticiasDeTV = new NoticiasDeTV(Integer.parseInt(parts[0]), parts[1], Integer.parseInt(parts[2]), parts[3], parts[4]);
-
+        NoticiasDeTV noticiasDeTV = new NoticiasDeTV(
+        		Integer.parseInt(parts[0]), 
+        		parts[1], 
+        		Integer.parseInt(parts[2]), 
+        		parts[3], 
+        		parts[4]);
         String[] presentadoresNombres = parts[5].split("\\|");
         for (String nombre : presentadoresNombres){
             noticiasDeTV.agregarPresentadores(new Presentador(nombre));

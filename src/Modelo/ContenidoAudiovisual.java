@@ -2,8 +2,8 @@ package Modelo;
 
 // Clase abstracta que sirve como base para películas y series de TV.
 public abstract class ContenidoAudiovisual {
-    // Atributos básicos comunes a películas y series.
-    public int id;
+   
+	public int id;
     public String titulo;
     public int duracionEnMinutos;
     public String genero;
@@ -37,6 +37,6 @@ public abstract class ContenidoAudiovisual {
 
     // Método para leer datos desde CSV. Será implementado en las subclases.
     public static ContenidoAudiovisual fromCSV(String csvLine) {
-        return null; // Implementación en subclases.
+        return null;
     }
 }
